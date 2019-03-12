@@ -19,11 +19,26 @@ namespace DoublyLinkedListTests
             Assert.Equal(expected.prev, test.prev);
 
         }
-        public void DoublyLinkedListtest()
+        public void DoublyLinkedListTest()
         {
             DoubleLinkedList.DoublyLinkedList test = new DoubleLinkedList.DoublyLinkedList();
-            Assert.Null(test.head);
-            Assert.Null(test.tail);
+            Assert.Null(test.Head);
+            Assert.Null(test.Tail);
+        }
+
+        public void AddToTailTest()
+        {
+            Node seven = new Node(7);
+
+            DoubleLinkedList.DoublyLinkedList expected = new DoubleLinkedList.DoublyLinkedList();
+            expected.Tail = seven;
+
+
+            DoubleLinkedList.DoublyLinkedList test = new DoubleLinkedList.DoublyLinkedList();
+            test.AddToTail(seven);
+
+            Assert.Equal(expected.Tail, test.Tail);
+
         }
 
     }

@@ -9,8 +9,6 @@ namespace DoubleLinkedList
             Console.WriteLine("Doubly Linked List!");
         }
 
-
-       
-        }
-
     }
+
+}
